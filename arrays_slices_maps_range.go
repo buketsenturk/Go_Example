@@ -4,6 +4,10 @@ package main
 
 import "fmt"
 
+func printSlice(x []int){
+   fmt.Printf("len=%d cap=%d slice=%v\n",len(x),cap(x),x)
+}
+
 func main() {   
 
 
@@ -33,7 +37,7 @@ func main() {
     }
     fmt.Println("2d: ", twoDim)
   
-  }
+  
 
 
 /*
@@ -44,7 +48,6 @@ get: 100
 len: 5
 dcl: [1 2 3 4 5]
 2d:  [[0 1 2] [1 2 3]]
-
 */
 
 
@@ -52,7 +55,7 @@ dcl: [1 2 3 4 5]
 
 /////-----------------Slicess------------------------------------ array ın büyütülebilir küçültülebilir hali gibi
 
-    s  : =  make ([] dize ,  3 ) 
+   s := make([]string, 3)
     fmt . Println ( "emp:" ,  s )      //emp: [  ]
 
     s[0] = "a"
@@ -97,7 +100,7 @@ dcl: [1 2 3 4 5]
 
 //// OR
 
-   var numbers []int
+  var numbers []int
    printSlice(numbers)
    
    /* append allows nil slice */
@@ -118,20 +121,16 @@ dcl: [1 2 3 4 5]
    /* copy content of numbers to numbers1 */
    copy(numbers1,numbers)
    printSlice(numbers1)   
-}
-   func printSlice(x []int){
-   fmt.Printf("len=%d cap=%d slice=%v\n",len(x),cap(x),x)
+
+   
        
        
 /*
-
-
 len = 0 cap = 0 slice = []
 len = 1 cap = 2 slice = [0]
 len = 2 cap = 2 slice = [0 1]
 len = 5 cap = 8 slice = [0 1 2 3 4]
 len = 5 cap = 16 slice = [0 1 2 3 4]
-
 */
 
 ////////---------------------MAPS--------------------------------
@@ -205,8 +204,6 @@ len = 5 cap = 16 slice = [0 1 2 3 4]
 
 
     
-
-
 
 
 
