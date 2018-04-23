@@ -46,7 +46,7 @@ func main() {
    var area int
 
    area = LENGTH * WIDTH
-   fmt.Printf("value of area : %d", area)      //  50
+   fmt.Printf("value of area : %d  \n", area)      //  50
     
 ////---------------FOR-----------------------------------------------------
     
