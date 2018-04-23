@@ -16,7 +16,7 @@ func main() {
     fmt.Println(d)
     
     var e int
-    fmt.Println(e)
+    fmt.Println(e)       // 0 
     
     
     f := "string2"
