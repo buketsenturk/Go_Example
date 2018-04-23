@@ -1,7 +1,10 @@
 //you run ====>>>> $go run variables_const_for_if-else_switch.go
 
 package main
+
 import "fmt"
+import "time"
+
 func main() {
     
     var a = "string"
